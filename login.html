@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login page</title>
+	<script type="text/javascript">
+		
+		
+
+		function show(){
+
+            var uname=document.getElementById('num1').value;
+		    var pass=document.getElementById('num2').value;
+
+		    if(uname=="aryan" && pass=="123"){
+		    	location.assign('https://www.geeksforgeeks.org/quiz-bubblesort-gq/');
+		    }
+		    else{
+		    	alert("soory u are wrong user!!")
+		    }
+
+		}
+
+	</script>
+	<style type="text/css">
+		div{
+  
+                   margin: 0 auto;
+            }
+            h1{
+            	color: red;
+            	text-align: center;
+            }
+            #box{
+            	width: 500px;
+            	height: 400px;
+            	border: 2px solid red;
+            }
+	</style>
+</head>
+<body>
+    <div>
+    	<h1>Welcome to javascript login page</h1>
+    	<hr>
+       
+       <div id="box">
+       	   <h2 style="text-align: center;">Hello user welcome </h2>
+
+       	   <table>
+       	   	<tr>
+       	   		<td>
+       	   			username:
+       	   			<input type="text" name="" placeholder="Enter the number" id="num1">
+       	   		</td>
+       	   	</tr>
+       	   	<tr>
+       	   		<td>
+       	   			password:
+       	   			<input type="password" placeholder="Enter the password" id="num2">
+       	   		</td>
+       	   	</tr>
+       	   </table>
+       	   <input type="submit" id="output" onclick="show()" name="">
+       </div>
+    </div>
+</body>
+</html>
